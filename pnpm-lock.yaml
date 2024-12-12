@@ -18,13 +18,13 @@ importers:
         specifier: 0.11.1
         version: 0.11.1(typescript@5.7.2)(zod@3.24.1)
       '@uploadthing/react':
-        specifier: ^7.1.2
-        version: 7.1.2(next@15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)(uploadthing@7.4.0(next@15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(tailwindcss@3.4.16))
+        specifier: ^7.1.3
+        version: 7.1.3(next@15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)(uploadthing@7.4.0(next@15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(tailwindcss@3.4.16))
       dotenv:
         specifier: ^16.4.7
         version: 16.4.7
       drizzle-orm:
-        specifier: 0.38.1
+        specifier: ^0.38.1
         version: 0.38.1(@neondatabase/serverless@0.10.4)(@types/pg@8.11.6)(@types/react@19.0.1)(pg@8.13.1)(postgres@3.4.5)(react@19.0.0)
       geist:
         specifier: ^1.3.1
@@ -42,7 +42,7 @@ importers:
         specifier: ^19.0.0
         version: 19.0.0(react@19.0.0)
       uploadthing:
-        specifier: ^7.4.0
+        specifier: 7.4.0
         version: 7.4.0(next@15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(tailwindcss@3.4.16)
       zod:
         specifier: ^3.24.1
@@ -67,7 +67,7 @@ importers:
         specifier: ^8.18.0
         version: 8.18.0(eslint@9.16.0(jiti@1.21.6))(typescript@5.7.2)
       drizzle-kit:
-        specifier: 0.30.0
+        specifier: ^0.30.0
         version: 0.30.0
       eslint:
         specifier: 9.16.0
@@ -791,18 +791,21 @@ packages:
   '@uploadthing/mime-types@0.3.2':
     resolution: {integrity: sha512-WP/K75S/649lM0GUcd9jq4RjeTIc/0bO2UmLx4+usTSNy/x0K8gV0JdLWeUUbmTQtJoHd4ZTSvAdG7ZQgcmXvA==}
 
-  '@uploadthing/react@7.1.2':
-    resolution: {integrity: sha512-qH6A/s53DvqGJfSsRMfbum6Zc3CZ135BmL/qmguJdzA8wqWyMoi3dbHcCn3+gUldViVHUqiR324DzK4PlCQKIQ==}
+  '@uploadthing/react@7.1.3':
+    resolution: {integrity: sha512-oV8hhFtAl7I05mmop8zQSz1nIq5KamfSPYpFl0OU/61TcmEcXXISH6CshF/TMuHasvqvGpMVfW7meC8b7idxBA==}
     peerDependencies:
       next: '*'
       react: ^17.0.2 || ^18.0.0
-      uploadthing: 7.4.0
+      uploadthing: 7.4.1
     peerDependenciesMeta:
       next:
         optional: true
 
   '@uploadthing/shared@7.1.2':
     resolution: {integrity: sha512-RG26qUpPufDtuR6NQbFXIJAkkOLTgoU2pvF2MoUx3AsdCwM5/RrgwzsXudNBRER7rQQLg9/k8+Oq+jeVv30qhg==}
+
+  '@uploadthing/shared@7.1.3':
+    resolution: {integrity: sha512-JlYz/JLZPrMAZRg7YPDUICodvIXLW9xS32aErqDvD76juq6nPRwFdwG5V089CY2kS5Ju9I0rGAu94hbJFqd9qQ==}
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -941,8 +944,8 @@ packages:
     resolution: {integrity: sha512-QOSvevhslijgYwRx6Rv7zKdMF8lbRmx+uQGx2+vDc+KI/eBnsy9kit5aj23AgGu3pa4t9AgwbnXWqS+iOY+2aA==}
     engines: {node: '>= 6'}
 
-  caniuse-lite@1.0.30001687:
-    resolution: {integrity: sha512-0S/FDhf4ZiqrTUiQ39dKeUjYRjkv7lOZU1Dgif2rIqrTzX/1wV2hfKu9TOm1IHkdSijfLswxTFzl/cvir+SLSQ==}
+  caniuse-lite@1.0.30001688:
+    resolution: {integrity: sha512-Nmqpru91cuABu/DTCXbM2NSRHzM2uVHfPnhJ/1zEAJx/ILBRVmz3pzH4N7DZqbdG0gWClsCC05Oj0mJ/1AWMbA==}
 
   chalk@4.1.2:
     resolution: {integrity: sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==}
@@ -1171,6 +1174,9 @@ packages:
 
   effect@3.10.15:
     resolution: {integrity: sha512-LdczPAFbtij3xGr9i+8PyDtuWdlXjSY5UJ8PKrYrr0DClKfR/OW3j8sxtambWYljzJAYD865KFhv7LdbWdG7VQ==}
+
+  effect@3.11.5:
+    resolution: {integrity: sha512-oSzaR/S/2A/qDTnDqMWxQUNSjCG2sRLB4NEvTu+l9RqE122MTgKXOWzw0x4MHsdovRTzAihfkpgBj2aLFnH2+w==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -3013,9 +3019,9 @@ snapshots:
 
   '@uploadthing/mime-types@0.3.2': {}
 
-  '@uploadthing/react@7.1.2(next@15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)(uploadthing@7.4.0(next@15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(tailwindcss@3.4.16))':
+  '@uploadthing/react@7.1.3(next@15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)(uploadthing@7.4.0(next@15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(tailwindcss@3.4.16))':
     dependencies:
-      '@uploadthing/shared': 7.1.2
+      '@uploadthing/shared': 7.1.3
       file-selector: 0.6.0
       react: 19.0.0
       uploadthing: 7.4.0(next@15.1.0(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(tailwindcss@3.4.16)
@@ -3026,6 +3032,12 @@ snapshots:
     dependencies:
       '@uploadthing/mime-types': 0.3.2
       effect: 3.10.15
+      sqids: 0.3.0
+
+  '@uploadthing/shared@7.1.3':
+    dependencies:
+      '@uploadthing/mime-types': 0.3.2
+      effect: 3.11.5
       sqids: 0.3.0
 
   acorn-jsx@5.3.2(acorn@8.14.0):
@@ -3183,7 +3195,7 @@ snapshots:
 
   camelcase-css@2.0.1: {}
 
-  caniuse-lite@1.0.30001687: {}
+  caniuse-lite@1.0.30001688: {}
 
   chalk@4.1.2:
     dependencies:
@@ -3331,6 +3343,10 @@ snapshots:
   eastasianwidth@0.2.0: {}
 
   effect@3.10.15:
+    dependencies:
+      fast-check: 3.23.1
+
+  effect@3.11.5:
     dependencies:
       fast-check: 3.23.1
 
@@ -4105,7 +4121,7 @@ snapshots:
       '@swc/counter': 0.1.3
       '@swc/helpers': 0.5.15
       busboy: 1.6.0
-      caniuse-lite: 1.0.30001687
+      caniuse-lite: 1.0.30001688
       postcss: 8.4.31
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
